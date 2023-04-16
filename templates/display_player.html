@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Displaying player Details</h1>
+        <table border="2px">
+            <tr>
+                <th>gamen</th>
+                <th>playern</th>
+                <th>age</th>
+        
+            </tr>
+
+            {% for po in players %}
+                <tr>
+                    <td>{{po.gamen}}</td>
+                    
+                    <td>{{po.playern}}</td>
+                    
+                    <td>{{po.age}}</td>
+                    
+                </tr>
+            {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </table>
+    </center>
+</body>
+</html>

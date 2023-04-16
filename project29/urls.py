@@ -23,5 +23,8 @@ urlpatterns = [
     path("insert_games/",insert_games,name="insert_games"),
     path('insert_player/',insert_player,name='insert_name'),
     path('insert_location/',insert_location,name='insert_location'),
+    
+    path('retrive_data/',retrive_data,name="retrive+data"),
+    path("display_player/",display_player,name="display_player"),
   
 ]

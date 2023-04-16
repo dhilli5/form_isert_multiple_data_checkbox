@@ -45,3 +45,20 @@ def insert_location(request):
     d={"play":LOL}
    
     return render(request,"insert_location.html",context=d)
+
+def retrive_data(request):
+    LOG=Games.objects.all()
+    d={"games":LOG}
+    if request.method=="POST":
+        gn=request.POST.getlist('games')
+        print(gn)
+        webqueryset=Player.objects.none()
+        
+        
+        for i in gn:
+            webqueryset=webqueryset|Player.objects.filter(gamen=i)
+        d1={'players':webqueryset}
+        return render(request,'display_player.html',d1)
+    return render(request,'retrive_data.html',d)
+def display_player(request):
+    return render(request,'display_player.html')
