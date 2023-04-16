@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <title>insert_games</title>
+
+    </head>
+    <body>
+              <center>
+        <form method="POST">
+            <h1> insert the games data</h1>
+            <h1>{% csrf_token %}<h1>
+            <label for="game">gamen</label>
+            <input type="text" name="game" id="game">
+            <br><br>
+            <input type="submit" value="insert_game">
+
+            </form>
+        </center>
+    </body>
+</html>
