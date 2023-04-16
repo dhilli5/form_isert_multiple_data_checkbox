@@ -31,6 +31,7 @@ def insert_player(request):
 def insert_location(request):
     if request.method=="POST":
         pn=request.POST["play"]
+        
         PO=Player.objects.get(playern=pn)
         PO.save()
        
@@ -61,4 +62,13 @@ def retrive_data(request):
         return render(request,'display_player.html',d1)
     return render(request,'retrive_data.html',d)
 def display_player(request):
+
     return render(request,'display_player.html')
+
+def checkbox(request):
+    LTO=Games.objects.all()
+    d2={'games':LTO}
+    return render(request,'checkbox.html',d2)
+
+
+    

@@ -24,7 +24,8 @@ urlpatterns = [
     path('insert_player/',insert_player,name='insert_name'),
     path('insert_location/',insert_location,name='insert_location'),
     
-    path('retrive_data/',retrive_data,name="retrive+data"),
+    path('retrive_data/',retrive_data,name="retrive_data"),
     path("display_player/",display_player,name="display_player"),
+    path('checkbox/',checkbox,name="checkbox"),
   
 ]
