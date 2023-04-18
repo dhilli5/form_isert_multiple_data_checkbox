@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>display_location
+    </title>
 </head>
 <body>
-    <center>
-        <h1>Displaying player Details</h1>
+        <h1>Displaying location Details</h1>
         <table border="2px">
             <tr>
-                <th>game_n</th>
                 <th>player_n</th>
-                <th>age</th>
+                <th>city</th>
+                <th>state</th>
         
             </tr>
 
-            {% for po in players %}
+            {% for lo in locations %}
                 <tr>
-                    <td>{{po.game_n}}</td>
+                    <td>{{lo.player_n}}</td>
                     
-                    <td>{{po.player_n}}</td>
+                    <td>{{lo.city}}</td>
                     
-                    <td>{{po.age}}</td> 
+                    <td>{{lo.state}}</td> 
                     
                 </tr>
             {% endfor %}
-           </table>
-    </center>
+        </table>
 </body>
 </html>

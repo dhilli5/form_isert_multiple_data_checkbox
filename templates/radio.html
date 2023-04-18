@@ -16,7 +16,7 @@
 
             {% for go in games %}
                 <label for="games">{{go.game_n}}</label>
-                <input type="checkbox" name="games" id="games" value="{{go}}">
+                <input type="radio" name="games" id="games" value="{{go}}">
                 <br><br>
             {% endfor %}
             <input type="submit" value="Checkbox_Select">

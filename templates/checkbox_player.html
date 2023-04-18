@@ -14,9 +14,9 @@
         <form method="POST" action="{% url 'retrieve_data' %}">
             {% csrf_token %}
 
-            {% for go in games %}
-                <label for="games">{{go.game_n}}</label>
-                <input type="checkbox" name="games" id="games" value="{{go}}">
+            {% for po in players %}
+                <label for="playaers">{{po.player_n}}</label>
+                <input type="checkbox" name="players" id="players" value="{{po}}">
                 <br><br>
             {% endfor %}
             <input type="submit" value="Checkbox_Select">

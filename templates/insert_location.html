@@ -20,11 +20,11 @@
             <form method="POST">
                 <h1> insert the location data</h1>
                 <h1>{% csrf_token %}<h1>
-                <label for="play">playern</label>
+                <label for="play">player_n</label>
                 
               <select name="play" id="play">
                 {% for po in play %}
-                <option value="{{po}}" >{{ po.playern }}</option>
+                <option value="{{po}}" >{{ po.player_n }}</option>
                 {% endfor %}
               </select>
 

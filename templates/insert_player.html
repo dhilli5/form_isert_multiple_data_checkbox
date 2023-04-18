@@ -20,11 +20,11 @@
             <form method="POST">
                 <h1> insert the palyer data</h1>
                 <h1>{% csrf_token %}<h1>
-                <label for="game">gamen</label>
+                <label for="game">game_n</label>
 
-               <select name="game" id="game">
+               <select name="gamess" id="game">
                 {% for go in game %}
-                <option  value="{{go}}">{{ go.gamen }}</option>
+                <option  value="{{go}}">{{ go.game_n }}</option>
                 {% endfor %}
                     </option>
         
@@ -32,7 +32,7 @@
                 
                 </select>
                 <br><br>
-                <label for="pn">playern</label>
+                <label for="pn">player_n</label>
                 <input type="text" name="pn1" id="pn">
                 <br>
                 <br>

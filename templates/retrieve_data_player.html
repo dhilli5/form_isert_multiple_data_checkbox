@@ -14,17 +14,19 @@
     </head>
     <body>
         <center>
-            <h1>select one games</h1>
+            <h1>select one players</h1>
             <form method="POST">
                 {% csrf_token %}
-                <label for="games">gamen</label>
-                <select name="games" id="games" multiple>
-                    {% for go in games %}
-                    <option value="{{go}}">{{go.gamen}}</option>
-                        {% endfor %}
+                <label for="players">player_n</label>
+                <select name="players" id="players" multiple>
+                    {% for po in players %}
+                    <option value="{{po}}">{{po.player_n}}</option>
+                    {% endfor %}
                     </select>
                     <br><br>
                     <input type="submit" value="retrive">
+                </form>
+            </center>
         
         <script src="" async defer></script>
     </body>

@@ -5,18 +5,21 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
-        <title>insert_games</title>
+        <title>updating_games</title>
 
     </head>
     <body>
         <center>
         <form method="POST">
-            <h1> insert the games data</h1>
+            <h1> updating the games data</h1>
             <h1>{% csrf_token %}<h1>
             <label for="game">game_n</label>
             <input type="text" name="game" id="game">
             <br><br>
-            <input type="submit" value="insert_game">
+            <label for="player">player_n</label>
+            <input type="text" name="player" id="player">
+            <br><br>
+            <input type="submit" value="update_game">
 
             </form>
         </center>
